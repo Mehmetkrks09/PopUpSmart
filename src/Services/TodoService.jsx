@@ -6,9 +6,9 @@ export default class TodoService {
         return axios.get("https://631f25ad58a1c0fe9f618da7.mockapi.io/todos/");
     }
 
-    // getById(id) {
-    //     return axios.get("https://631f25ad58a1c0fe9f618da7.mockapi.io/todos/" + id);
-    // }
+    getById(id) {
+        return axios.get("https://631f25ad58a1c0fe9f618da7.mockapi.io/todos/" + id);
+    }
 
     addTodo(values) {
         return axios.post("https://631f25ad58a1c0fe9f618da7.mockapi.io/todos/", values);

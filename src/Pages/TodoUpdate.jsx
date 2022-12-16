@@ -16,8 +16,8 @@ export default function TodoUpdate({ id }) {
 
   let todoService = new TodoService()
 
-  useEffect(() => {
 
+  useEffect(() => {
     todoService.getById(id).then(result => setTodo(result.data))
 
   }, []);
